@@ -4,7 +4,7 @@
 // dossier.json with buildDossier from vendor/makefun-app.ts.
 // Outside the grader, MAKEFUN_OUTPUT_DIR stands in for /output.
 
-import { cpSync, mkdirSync, rmSync, statSync, writeFileSync } from 'node:fs';
+import { cpSync, mkdirSync, readdirSync, rmSync, statSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildDossier } from './vendor/makefun-app.ts';
@@ -12,8 +12,11 @@ import { buildDossier } from './vendor/makefun-app.ts';
 const repoDir = dirname(fileURLToPath(import.meta.url));
 const out = process.env.MAKEFUN_OUTPUT_DIR || '/output';
 
-rmSync(out, { recursive: true, force: true });
 mkdirSync(out, { recursive: true });
+// Clear only the CONTENTS of the output dir: the grader's dev run exited 1 with
+// `EACCES, Permission denied` when the program tried to remove the /output mount
+// point itself as uid 65534 (read-only root filesystem).
+for (const entry of readdirSync(out)) rmSync(join(out, entry), { recursive: true, force: true });
 
 cpSync(join(repoDir, 'app'), join(out, 'app'), { recursive: true });
 cpSync(join(repoDir, 'screenshots'), join(out, 'screenshots'), { recursive: true });
