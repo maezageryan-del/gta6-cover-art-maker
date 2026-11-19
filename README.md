@@ -1,10 +1,10 @@
+[![make.fun](https://make.fun/badge/gta6-cover-art-01.svg)](https://make.fun/bounty/gta6-cover-art-01)
+[![rank](https://make.fun/badge/maezageryan-del/gta6-cover-art-maker/rank.svg)](https://make.fun/bounty/gta6-cover-art-01)
+[![reward](https://make.fun/badge/maezageryan-del/gta6-cover-art-maker/reward.svg)](https://make.fun/bounty/gta6-cover-art-01)
+
 # Sunset Strip Cover Studio
 
-[![make.fun bounty](https://img.shields.io/badge/make.fun-bounty-ff5da2)](https://make.fun/bounty/gta6-cover-art-01)
-[![Free](https://img.shields.io/badge/price-free-22d3ee)](https://make.fun/bounty/gta6-cover-art-01)
-[![Offline](https://img.shields.io/badge/offline-yes-ffd166)](https://make.fun/bounty/gta6-cover-art-01)
-
-Entry for the [Make GTA 6 Cover Art](https://make.fun/bounty/gta6-cover-art-01) bounty ($250) — a web app that turns your photos into a multi-panel GTA-style poster cover, exported as a PNG to share.
+Entry for the [Make GTA 6 Cover Art](https://make.fun/bounty/gta6-cover-art-01) bounty ($250) — a web app that turns your photos into a multi-panel GTA-style poster cover, exported as a PNG to share. Every photo is graded like a comic book: one of six gradient-map halftone grades — Vice Sunset, Neon Nights, Palm Dusk, Heat Haze, Noir, Bubblegum — remaps each photo's shadows, midtones and highlights to a three-stop palette, comic-dot halftone shading is printed over the whole cover, and an inked caption with a thick outline and hard drop shadow finishes the look.
 
 ## What it does
 
