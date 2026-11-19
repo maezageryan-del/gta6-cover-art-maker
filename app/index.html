@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunset Strip Cover Studio — Make Your Own GTA-Style Cover</title>
+<meta name="description" content="Turn your photos into a multi-panel GTA-style poster cover: pick a layout, a sunset grade, write a caption, export a PNG. Fully offline — your photos never leave your machine.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">SS</span>
+    <div>
+      <h1>Sunset Strip <span>Cover Studio</span></h1>
+      <p class="tagline">Turn your photos into a GTA-style poster cover — no upload, no account, free.</p>
+    </div>
+  </div>
+  <button id="shuffle-btn" class="btn ghost" type="button" title="Random layout + grade">Surprise me</button>
+</header>
+
+<main class="studio">
+  <section class="preview-col">
+    <div id="preview-box" class="preview-box">
+      <canvas id="cover-canvas" width="960" height="540" aria-label="Cover preview"></canvas>
+    </div>
+    <p id="panel-label" class="panel-label">Panel 1 of 3 — click a panel in the preview, or drag it to reposition its photo</p>
+    <p id="status" class="status" role="status">Loading…</p>
+  </section>
+
+  <aside class="controls" aria-label="Cover controls">
+    <section class="card">
+      <h2>1 · Your photos</h2>
+      <p class="hint">Up to 4 photos. They are read on your machine and never uploaded.</p>
+      <div id="photo-slots" class="photo-slots"></div>
+      <input id="file-input" type="file" accept="image/*" multiple hidden>
+      <button id="upload-btn" class="btn primary" type="button">Add photos from this device</button>
+      <h3 class="subhead">Or try a sample</h3>
+      <div id="sample-row" class="sample-row"></div>
+    </section>
+
+    <section class="card">
+      <h2>2 · Layout</h2>
+      <div id="layout-btns" class="btn-grid"></div>
+    </section>
+
+    <section class="card">
+      <h2>3 · Colour grade</h2>
+      <div id="grade-btns" class="btn-grid"></div>
+      <p class="hint">Gradient-map grades with halftone comic dots — the look the other studios don’t have.</p>
+    </section>
+
+    <section class="card">
+      <h2>4 · Caption</h2>
+      <label class="field">
+        <span>Main caption</span>
+        <input id="caption-input" type="text" maxlength="24" value="SUNSET STRIP" autocomplete="off">
+      </label>
+      <label class="field">
+        <span>Sub-caption</span>
+        <input id="subcaption-input" type="text" maxlength="48" value="A COVER STORY IN NEON" autocomplete="off">
+      </label>
+    </section>
+
+    <section class="card">
+      <h2>5 · Active panel</h2>
+      <div id="panel-photo-btns" class="btn-row"></div>
+      <label class="field">
+        <span>Zoom <b id="zoom-val">100%</b></span>
+        <input id="zoom" type="range" min="100" max="300" value="100" step="5">
+      </label>
+      <button id="reset-crop" class="btn ghost" type="button">Reset this panel’s crop</button>
+    </section>
+
+    <section class="card export-card">
+      <h2>6 · Export</h2>
+      <div id="size-btns" class="btn-row wrap"></div>
+      <button id="export-btn" class="btn export" type="button">Export PNG cover</button>
+      <p class="hint">One click, no watermark. Post it anywhere.</p>
+    </section>
+  </aside>
+</main>
+
+<footer class="foot">
+  <p>Sunset Strip Cover Studio — original artwork and code. No Rockstar Games logo, artwork or font is used.
+  Fonts: Anton &amp; Inter, both under the SIL Open Font License (see <span class="mono">app/fonts/OFL.txt</span>).
+  Sample photos are original illustrations made for this app. Your photos never leave your device.</p>
+</footer>
+
+<script src="src/cover.js"></script>
+<script src="src/main.js"></script>
+<script src="src/shots.js"></script>
+</body>
+</html>
