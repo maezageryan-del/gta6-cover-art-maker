@@ -1,10 +1,10 @@
-[![make.fun](https://make.fun/badge/gta6-cover-art-01.svg)](https://make.fun/bounty/gta6-cover-art-01)
-[![rank](https://make.fun/badge/maezageryan-del/gta6-cover-art-maker/rank.svg)](https://make.fun/bounty/gta6-cover-art-01)
-[![reward](https://make.fun/badge/maezageryan-del/gta6-cover-art-maker/reward.svg)](https://make.fun/bounty/gta6-cover-art-01)
+[![make.fun · gta6-cover-art-01](https://make.fun/badge/gta6-cover-art-01.svg)](https://make.fun/bounty/gta6-cover-art-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-cover-art-01)
+[![rank](https://make.fun/badge/gta6-cover-art-01/maezageryan-del/gta6-cover-art-maker/rank.svg)](https://make.fun/bounty/gta6-cover-art-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-cover-art-01)
+[![reward](https://make.fun/badge/gta6-cover-art-01/maezageryan-del/gta6-cover-art-maker/reward.svg)](https://make.fun/bounty/gta6-cover-art-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-cover-art-01)
 
 # Sunset Strip Cover Studio
 
-Entry for the [Make GTA 6 Cover Art](https://make.fun/bounty/gta6-cover-art-01) bounty ($250) — a web app that turns your photos into a multi-panel GTA-style poster cover, exported as a PNG to share. Every photo is graded like a comic book: one of six gradient-map halftone grades — Vice Sunset, Neon Nights, Palm Dusk, Heat Haze, Noir, Bubblegum — remaps each photo's shadows, midtones and highlights to a three-stop palette, comic-dot halftone shading is printed over the whole cover, and an inked caption with a thick outline and hard drop shadow finishes the look.
+Entry for the [Make GTA 6 Cover Art](https://make.fun/bounty/gta6-cover-art-01) bounty ($250) — a web app that turns your photos into a multi-panel GTA-style poster cover, exported as a PNG to share. Every photo is graded like a comic book: one of six gradient-map halftone grades — Vice Sunset, Neon Nights, Palm Dusk, Heat Haze, Noir, Bubblegum — remaps each photo's shadows, midtones and highlights to a three-stop palette, comic-dot halftone shading is printed over the whole cover, and an inked caption with a thick outline and hard drop shadow completes the look.
 
 ## What it does
 
